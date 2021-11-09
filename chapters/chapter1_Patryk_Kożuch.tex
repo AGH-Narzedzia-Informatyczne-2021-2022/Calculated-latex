@@ -1,0 +1,58 @@
+\section{Patryk Kożuch}
+\subsection{Ciąg Fibonacciego - wzór}
+
+To ciąg liczb naturalnych określony rekurencyjnie w sposób \nohyphens{następujący}:
+
+\begin{equation}
+    F_{n} = \begin{cases}
+                    1 & \text{Dla } n = 1 \text{ i } n = 2 \\
+                    F_{n-2} + F_{n-1} & \text{Dla } n \geq 3 \\
+                \end{cases}
+\end{equation}
+
+\subsection{Graficzna interpretacja}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{pictures/zlota_spirala.jpg}
+    \caption{Graficzna interpretacja ciągu Fibonacciego. Krzywa poprowadzona przez przeciwległe wierzchołki kwadratów o bogach równych kolejnym wyrazom ciągu tworzy tak zwaną \emph{Złotą spiralę}}
+    \label{fig:fibonacci_graficznie}
+\end{figure}
+
+\subsection{Kolejne wyrazy ciągu}
+Poniższa tabela przedstawia wartości kolejnych wyrazów ciągu Fibonacciego oraz sposób ich obliczania.
+\begin{table}[h]
+\centering
+\caption{Kolejne wyrazy ciągu Fibonacciego}
+\label{tab:kolejne_wyrazy}
+\begin{tabular}{|c|c|}
+\hline
+n & $F_{n}$ \\ \hline
+1 & 1      \\ \hline
+2 & 1      \\ \hline
+3 & $F_{1} + F_{2} = 2$      \\ \hline
+4 & $F_{2} + F_{3} = 3$     \\ \hline
+5 & $F_{3} + F_{4} = 5$      \\ \hline
+6 & $F_{4} + F_{5} = 8$      \\ \hline
+\end{tabular}
+\end{table}
+\subsection{Znaczenie kombinatoryczne ciągu Fibonacciego}
+\begin{enumerate}
+    \item liczba ciągów o wyrazach równych 1 lub 2, które sumują się do liczby n, jest równa $F_{n+1}$
+    \item liczba pokryć planszy $2 \times n$ kostkami domina $2 \times 1$ jest równa $F_{n+1}$
+    \item liczba ciągów binarnych bez kolejnych jedynek (równoważnie zer) jest równa $F_{n+2}$
+    \item liczba podzbiorów zbioru \{ 1, \dots, n \} bez kolejnych liczb jest równa $F_{n+2}$
+    \item liczba ciągów binarnych bez nieparzystej długości ciągów jedynek jest równa $F_{n+1}$
+    \item liczba ciągów binarnych bez parzystej długości ciągów zer lub jedynek jest równa 2 $F_n$.
+\end{enumerate}
+
+\subsection{Mniej znane właściwości ciągu Fibonacciego}
+\begin{itemize}
+    \item Z wyjątkiem jednocyfrowych liczb ciągu Fibonacciego zawsze cztery albo pięć następujących po sobie wyrazów ciągu ma tę samą liczbę cyfr w układzie dziesiętnym.
+    \item Jedynymi liczbami w ciągu Fibonacciego, będącymi kwadratami liczb całkowitych są 0, 1 i 144.
+    \item Co trzecia liczba Fibonacciego jest podzielna przez 2, co czwarta – przez 3. Ogólniej: jeśli numer $n$ dzieli się przez $k$, to liczba $F_{n}$ dzieli się przez $F_{k}$.
+\end{itemize}
+\subsection{Życieroys Leonardo Fibonacci'ego}
+\setlength{\parindent}{30pt}
+Jego ojciec, \textbf{Guglielmo} z rodziny \textit{Bonacci}, zajmował stanowisko dyplomatyczne w Afryce północnej i Fibonacci tam właśnie się kształcił. Pierwsze lekcje matematyki pobierał od arabskiego nauczyciela w mieście Boużia (dziś algierska Bidżaja). Dużo podróżował najpierw razem z ojcem, później samodzielnie, odwiedzając i kształcąc się w takich miejscach jak \textbf{Egipt, Syria, Prowansja, Grecja i Sycylia}. W czasie swych podróży po Europie i po krajach Wschodu miał okazję poznać osiągnięcia matematyków arabskich i hinduskich, między innymi \textbf{\textit{dziesiętny system liczbowy}}.
+
+\underline{Około 1200} roku Fibonacci zakończył podróże i powrócił do Pizy. Tam właśnie opracował swój słynny ciąg, którego interpretacja graficzna znajduje się na rysunku nr \ref{fig:fibonacci_graficznie}. Kolejne wyrazy możemy zobaczyć w tabeli nr \ref{tab:kolejne_wyrazy}.
